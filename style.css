@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(7, 1, 14);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 90%;
+}
+.header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+button{
+    border: none;
+}
+button.check,button.delete{
+    background-color: transparent;
+    cursor: pointer;
+}
+.input-task{
+    background-color: transparent;
+    width: 90%;
+    height: 35px;
+    color: white;
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    padding: 0 0 0 10px;
+    font-size: 12px;
+}
+.input-task:focus{
+    outline: none;
+
+}
+.btn-task{
+    background-color: rgb(187, 131, 240);
+    color: white;
+    font-size: 20px;
+    font-weight: thin;
+    border-radius: 10px;
+    height: 32px;
+    width: 32px
+}
+.btn-task:hover{
+    cursor: pointer;
+    background-color: rgb(166, 86, 241);
+}
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: rgb(228, 211, 243)!important;
+
+}
+.content-wrapper p{
+    font-size: 14px;
+    font-weight: bold;
+}
+#pending-tasks, #completed-task{
+    display: none;
+}
+.content-wrap span, .fa-solid{
+    color: rgb(187, 131, 240);
+    font-size: 17px;
+}
+.content-done-wrap span{
+    color: rgb(27, 228, 27);
+    font-size: 17px;
+    text-decoration: line-through rgb(36, 233, 36);
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.content-done-wrap{
+    display: flex;
+    align-items: center;
+}
+.content-wrap span{
+    width: 90%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.content-wrap button{
+    width: 10%;
+}
+.content-wrap span:hover, #count-value{
+    color: rgb(141, 29, 247);
+}
+#count-value{
+    padding: 0 0 0 10px;
+}
+.fa-solid:hover{
+    color: rgb(141, 29, 247);
+}
+.content-wrapper div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-wrap, .content-done-wrap{
+    background-color: rgb(26, 21, 31);
+    border-radius: 5px;
+    height: 70px;
+    padding: 0 15px;
+}
+.fa-wrap{
+    display: flex;
+    gap: 20px;
+}
+@media (min-width: 768px){
+    .container{
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px){
+    .container{
+        width: 50%;
+    }
+}
+@media (min-width: 1280px){
+    .container{
+        width: 30%;
+    }
+}
+
